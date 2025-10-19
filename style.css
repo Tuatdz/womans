@@ -999,15 +999,16 @@ body {
 
 .moon {
   position: absolute;
-  top: 8%; /* Đặt gần dòng chữ */
-  left: 50%;
-  transform: translateX(-50%);
+  top: 5%;   /* Cách lề trên 5% */
+  right: 5%; /* Cách lề phải 5% */
+  left: auto; /* Bỏ thuộc tính left trước đó */
+  transform: none; /* Bỏ transform để không còn căn giữa */
   width: 80px;
   height: 80px;
   background: #f0f0f0;
   border-radius: 50%;
   box-shadow: 0 0 30px #f0f0f0, 0 0 60px #f0f0f0, 0 0 90px #f0f0f0;
-  z-index: 1; /* Ở đằng sau */
+  z-index: 100; /* Tăng z-index để nó nằm trên mây và các phần tử khác */
 }
 
 .fog {
